@@ -1,0 +1,24 @@
+
+spring:
+#  数据库连接配置
+  datasource-bp:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/banpai
+    username: root
+    password: root
+  datasource-nn:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/demo
+      username: root
+      password: root
+
+#设置端口9000
+server:
+  port: 9000
+
+#配置mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+
+
